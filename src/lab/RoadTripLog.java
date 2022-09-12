@@ -4,9 +4,9 @@ public class RoadTripLog {
     
     private String tripName;
     private double totalDistance;
-
     private double totalFuel;
 
+    // Constructor
     public RoadTripLog(String name) {
         this.tripName = name;
     }
@@ -33,17 +33,18 @@ public class RoadTripLog {
     // Miles Per Gallon
 
     public double getMPG() {
-        return (double) Math.round((this.totalDistance / this.totalFuel) * 100.0) / 100.0;
-        
+        return Math.round((this.totalDistance / this.totalFuel) * 100.0) / 100.0;
     }
+
+    // Overrides
 
     @Override
     public String toString() {
         String output = 
-        "Trip : " + this.tripName +
-      "\n*    Distance: " + this.totalDistance +
-      "\n*    Fuel Used: " + this.totalFuel +
-      "\n*    MPG: " + getMPG(); 
+        "Trip: " + this.tripName +
+      "\nDistance: " + this.totalDistance +
+      "\nFuel Used: " + this.totalFuel +
+      "\nMPG: " + getMPG(); 
 
         return output;
     }
