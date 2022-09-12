@@ -37,8 +37,8 @@ public class Trip {
 		trip.addFuel(18.4);
 		
 		System.out.println("Stop #1");
-		System.out.println("   " + trip.getTotalDistance());
-		System.out.println("   " + trip.getTotalFuel());
+		System.out.println("   " + trip.getDistance());
+		System.out.println("   " + trip.getTotalFuel()); // 
 		System.out.println("   " + trip.getMPG() + "\n");
 		
 		
@@ -46,7 +46,7 @@ public class Trip {
 		trip.addFuel(12.5);
 		
 		System.out.println("Stop #2");
-		System.out.println("   " + trip.getTotalDistance());
+		System.out.println("   " + trip.getDistance());
 		System.out.println("   " + trip.getTotalFuel());
 		System.out.println("   " + trip.getMPG() + "\n");
 		
